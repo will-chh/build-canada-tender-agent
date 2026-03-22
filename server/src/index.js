@@ -9,7 +9,7 @@ import aiRoutes from './routes/ai.js'
 const app = express()
 const PORT = process.env.PORT || 3001
 
-app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:5173' }))
+app.use(cors())
 app.use(express.json())
 
 // Health checks
